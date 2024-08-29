@@ -1,0 +1,54 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Mon Jun  3 17:34:50 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II_V2/Digital-Circuits-II/Homework/Homework 4/MDIO 2-2023/mdio.vcd"
+[dumpfile_mtime] "Mon Jun  3 17:33:30 2024"
+[dumpfile_size] 22686
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II_V2/Digital-Circuits-II/Homework/Homework 4/MDIO 2-2023/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -27 -24
+*-9.000000 195 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mdio_tb.
+[sst_width] 273
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@200
+-Generador
+@28
+mdio_tb.U0.clk
+mdio_tb.U0.reset
+mdio_tb.U0.mdc
+[color] 2
+mdio_tb.U0.start_stb
+@22
+mdio_tb.U0.cuenta_bits[4:0]
+@28
+mdio_tb.U0.estado[2:0]
+@22
+mdio_tb.U0.transaccion[31:0]
+@28
+mdio_tb.U0.mdio_oe
+mdio_tb.U0.mdio_out
+mdio_tb.U0.mdio_in
+@200
+-Receptor
+@28
+mdio_tb.U1.mdc
+mdio_tb.U1.reset
+@29
+mdio_tb.U1.mdio_in
+@28
+mdio_tb.U1.mdio_oe
+mdio_tb.U1.mdio_out
+@22
+mdio_tb.U1.cuenta_bits[4:0]
+@28
+mdio_tb.U1.mdio_in
+mdio_tb.U1.estado[1:0]
+@22
+mdio_tb.U1.transaccion[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

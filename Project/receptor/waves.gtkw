@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sun Jul  7 01:14:36 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Project/1S2024_G2/receptor/PCS.vcd"
+[dumpfile_mtime] "Sun Jul  7 01:13:44 2024"
+[dumpfile_size] 34479
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Project/1S2024_G2/receptor/waves.gtkw"
+[timestart] 8
+[size] 1440 821
+[pos] -27 -24
+*-5.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] PCS_tb.
+[treeopen] PCS_tb.R0.
+[sst_width] 273
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@28
+PCS_tb.R0.CLK
+[color] 7
+PCS_tb.R0.RESET
+@29
+[color] 3
+PCS_tb.R0.STATE[6:0]
+@28
+[color] 3
+PCS_tb.R0.SUDI[10:0]
+PCS_tb.R0.EVEN
+PCS_tb.R0.rx_code_group[9:0]
+[color] 2
+PCS_tb.R0.RD
+[color] 2
+PCS_tb.R0.RUDI
+PCS_tb.R0.receiving
+PCS_tb.R0.SYNC_STATUS
+@22
+[color] 3
+PCS_tb.R0.RXD[7:0]
+@28
+[color] 3
+PCS_tb.R0.check_end
+PCS_tb.R0.RX_DV
+[pattern_trace] 1
+[pattern_trace] 0

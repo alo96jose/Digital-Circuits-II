@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sat Apr 13 00:18:17 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework 1/resultados.vcd"
+[dumpfile_mtime] "Sat Apr 13 00:00:42 2024"
+[dumpfile_size] 1307
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework 1/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -27 -24
+*-6.185585 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] controlador_tb.
+[sst_width] 273
+[signals_width] 206
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@28
+controlador_tb.U0.clock
+controlador_tb.U0.reset
+[color] 1
+controlador_tb.U0.sensor_a
+[color] 1
+controlador_tb.U0.sensor_b
+controlador_tb.U0.senal_abrir_compuerta
+controlador_tb.U0.senal_cerrar_compuerta
+controlador_tb.U0.alarma_pin_incorrecto
+controlador_tb.U0.alarma_bloqueo
+@24
+controlador_tb.U0.pin[7:0]
+@28
+controlador_tb.U0.pin_validation
+@24
+[color] 3
+controlador_tb.U0.state[2:0]
+controlador_tb.U0.nxt_state[2:0]
+controlador_tb.U0.i[4:0]
+controlador_tb.U0.nxt_i[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

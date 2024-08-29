@@ -1,0 +1,38 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jul  7 01:28:23 2024
+[*]
+[dumpfile] "/home/daniiub47/1S2024_G2/Sincronizador/resultados.vcd"
+[dumpfile_mtime] "Sun Jul  7 01:25:50 2024"
+[dumpfile_size] 7711
+[savefile] "/home/daniiub47/1S2024_G2/Sincronizador/sync_waves.gtkw"
+[timestart] 0
+[size] 1850 859
+[pos] 70 27
+*-4.003398 20 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] sync_tb.
+[sst_width] 233
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 233
+@28
+sync_tb.U0.clk
+sync_tb.U0.reset
+[color] 5
+sync_tb.U0.rx_cg[9:0]
+[color] 2
+sync_tb.U0.SUDI[10:0]
+[color] 7
+sync_tb.U0.sync_status
+[color] 3
+sync_tb.U0.rx_even
+sync_tb.U0.cg_valid
+@24
+sync_tb.U0.cont_datos[2:0]
+@25
+[color] 1
+sync_tb.U0.cont_cgbad[2:0]
+@28
+sync_tb.U0.estado[5:0]
+[pattern_trace] 1
+[pattern_trace] 0

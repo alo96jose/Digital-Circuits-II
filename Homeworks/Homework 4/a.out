@@ -1,0 +1,153 @@
+#! /usr/local/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-498-g52d049b51)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/lib/ivl/system.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/lib/ivl/va_math.vpi";
+S_0x55c44b9b9f40 .scope module, "target_spi" "target_spi" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "MOSI";
+    .port_info 1 /INPUT 1 "SCK";
+    .port_info 2 /INPUT 1 "SS";
+    .port_info 3 /INPUT 1 "CKP";
+    .port_info 4 /INPUT 1 "CPH";
+    .port_info 5 /INPUT 1 "RESET";
+    .port_info 6 /OUTPUT 1 "MISO";
+P_0x55c44b9deb80 .param/l "ESCRITURA_LECTURA" 1 2 16, C4<010>;
+P_0x55c44b9debc0 .param/l "IDLE" 1 2 15, C4<001>;
+o0x7fbe51463168 .functor BUFZ 1, c4<z>; HiZ drive
+L_0x55c44ba0ce00 .functor AND 1, o0x7fbe51463168, L_0x55c44ba0cd60, C4<1>, C4<1>;
+o0x7fbe51463018 .functor BUFZ 1, c4<z>; HiZ drive
+v0x55c44b9ba260_0 .net "CKP", 0 0, o0x7fbe51463018;  0 drivers
+o0x7fbe51463048 .functor BUFZ 1, c4<z>; HiZ drive
+v0x55c44ba0bc30_0 .net "CPH", 0 0, o0x7fbe51463048;  0 drivers
+v0x55c44ba0bcf0_0 .var "MISO", 0 0;
+o0x7fbe514630a8 .functor BUFZ 1, c4<z>; HiZ drive
+v0x55c44ba0bd90_0 .net "MOSI", 0 0, o0x7fbe514630a8;  0 drivers
+v0x55c44ba0be50_0 .var "NXT_MISO", 0 0;
+o0x7fbe51463108 .functor BUFZ 1, c4<z>; HiZ drive
+v0x55c44ba0bf60_0 .net "RESET", 0 0, o0x7fbe51463108;  0 drivers
+o0x7fbe51463138 .functor BUFZ 1, c4<z>; HiZ drive
+v0x55c44ba0c020_0 .net "SCK", 0 0, o0x7fbe51463138;  0 drivers
+v0x55c44ba0c0e0_0 .net "SS", 0 0, o0x7fbe51463168;  0 drivers
+v0x55c44ba0c1a0_0 .var "SS_d", 0 0;
+v0x55c44ba0c2f0_0 .net *"_ivl_1", 0 0, L_0x55c44ba0cd60;  1 drivers
+v0x55c44ba0c3b0_0 .var "cuenta_bits", 4 0;
+v0x55c44ba0c490_0 .var "dato_enviado", 15 0;
+v0x55c44ba0c570_0 .var "dato_recibido", 15 0;
+v0x55c44ba0c650_0 .var "estado", 2 0;
+v0x55c44ba0c730_0 .net "posedge_SS", 0 0, L_0x55c44ba0ce00;  1 drivers
+v0x55c44ba0c7f0_0 .var "prox_cuenta_bits", 4 0;
+v0x55c44ba0c8d0_0 .var "prox_dato_enviado", 15 0;
+v0x55c44ba0cac0_0 .var "prox_dato_recibido", 15 0;
+v0x55c44ba0cba0_0 .var "prox_estado", 2 0;
+E_0x55c44b9f4c40/0 .event anyedge, v0x55c44ba0c650_0, v0x55c44ba0c3b0_0, v0x55c44ba0bcf0_0, v0x55c44ba0c0e0_0;
+E_0x55c44b9f4c40/1 .event anyedge, v0x55c44ba0c490_0, v0x55c44ba0bd90_0;
+E_0x55c44b9f4c40 .event/or E_0x55c44b9f4c40/0, E_0x55c44b9f4c40/1;
+E_0x55c44b9f35e0 .event posedge, v0x55c44ba0c020_0;
+L_0x55c44ba0cd60 .reduce/nor v0x55c44ba0c1a0_0;
+    .scope S_0x55c44b9b9f40;
+T_0 ;
+    %wait E_0x55c44b9f35e0;
+    %load/vec4 v0x55c44ba0bf60_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 1, 0, 3;
+    %assign/vec4 v0x55c44ba0c650_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v0x55c44ba0c3b0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x55c44ba0bcf0_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v0x55c44ba0c570_0, 0;
+    %pushi/vec4 0, 0, 16;
+    %assign/vec4 v0x55c44ba0c490_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %assign/vec4 v0x55c44ba0c1a0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x55c44ba0cba0_0;
+    %assign/vec4 v0x55c44ba0c650_0, 0;
+    %load/vec4 v0x55c44ba0c7f0_0;
+    %assign/vec4 v0x55c44ba0c3b0_0, 0;
+    %load/vec4 v0x55c44ba0be50_0;
+    %assign/vec4 v0x55c44ba0bcf0_0, 0;
+    %load/vec4 v0x55c44ba0cac0_0;
+    %assign/vec4 v0x55c44ba0c570_0, 0;
+    %load/vec4 v0x55c44ba0c8d0_0;
+    %assign/vec4 v0x55c44ba0c490_0, 0;
+    %load/vec4 v0x55c44ba0c0e0_0;
+    %assign/vec4 v0x55c44ba0c1a0_0, 0;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x55c44b9b9f40;
+T_1 ;
+    %wait E_0x55c44b9f4c40;
+    %load/vec4 v0x55c44ba0c650_0;
+    %store/vec4 v0x55c44ba0cba0_0, 0, 3;
+    %load/vec4 v0x55c44ba0c3b0_0;
+    %store/vec4 v0x55c44ba0c7f0_0, 0, 5;
+    %load/vec4 v0x55c44ba0bcf0_0;
+    %store/vec4 v0x55c44ba0be50_0, 0, 1;
+    %load/vec4 v0x55c44ba0c650_0;
+    %dup/vec4;
+    %pushi/vec4 1, 0, 3;
+    %cmp/u;
+    %jmp/1 T_1.0, 6;
+    %dup/vec4;
+    %pushi/vec4 2, 0, 3;
+    %cmp/u;
+    %jmp/1 T_1.1, 6;
+    %pushi/vec4 1, 0, 3;
+    %store/vec4 v0x55c44ba0cba0_0, 0, 3;
+    %jmp T_1.3;
+T_1.0 ;
+    %pushi/vec4 0, 0, 5;
+    %store/vec4 v0x55c44ba0c7f0_0, 0, 5;
+    %load/vec4 v0x55c44ba0c0e0_0;
+    %inv;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.4, 8;
+    %pushi/vec4 2, 0, 3;
+    %store/vec4 v0x55c44ba0cba0_0, 0, 3;
+T_1.4 ;
+    %jmp T_1.3;
+T_1.1 ;
+    %load/vec4 v0x55c44ba0c3b0_0;
+    %addi 1, 0, 5;
+    %store/vec4 v0x55c44ba0c7f0_0, 0, 5;
+    %load/vec4 v0x55c44ba0c490_0;
+    %pushi/vec4 15, 0, 32;
+    %load/vec4 v0x55c44ba0c3b0_0;
+    %pad/u 32;
+    %sub;
+    %part/u 1;
+    %store/vec4 v0x55c44ba0be50_0, 0, 1;
+    %load/vec4 v0x55c44ba0bd90_0;
+    %pushi/vec4 15, 0, 32;
+    %load/vec4 v0x55c44ba0c3b0_0;
+    %pad/u 32;
+    %sub;
+    %ix/vec4 4;
+    %store/vec4 v0x55c44ba0c570_0, 4, 1;
+    %load/vec4 v0x55c44ba0c3b0_0;
+    %pad/u 32;
+    %cmpi/e 15, 0, 32;
+    %jmp/0xz  T_1.6, 4;
+    %pushi/vec4 1, 0, 3;
+    %store/vec4 v0x55c44ba0cba0_0, 0, 3;
+T_1.6 ;
+    %jmp T_1.3;
+T_1.3 ;
+    %pop/vec4 1;
+    %jmp T_1;
+    .thread T_1, $push;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "target_spi.v";

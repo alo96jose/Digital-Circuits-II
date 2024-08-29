@@ -1,0 +1,80 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sat Jun  8 03:30:20 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II_V2/Digital-Circuits-II/Homework/Homework 4/v2/B63561/spi.vcd"
+[dumpfile_mtime] "Sat Jun  8 03:26:11 2024"
+[dumpfile_size] 10381
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II_V2/Digital-Circuits-II/Homework/Homework 4/v2/B63561/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -27 -24
+*-9.000000 2278 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spi_tb.
+[sst_width] 273
+[signals_width] 222
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@200
+-CPU
+@28
+spi_tb.U0.CLK
+spi_tb.U0.RESET
+[color] 7
+spi_tb.U0.START_STB
+[color] 3
+spi_tb.U0.SCK
+[color] 7
+spi_tb.U0.CS
+@24
+[color] 2
+spi_tb.U0.aux[4:0]
+@22
+spi_tb.U0.transaccion[15:0]
+@24
+spi_tb.U0.cuenta_bits[4:0]
+@28
+[color] 2
+spi_tb.U0.MISO
+[color] 3
+spi_tb.U0.estado[1:0]
+@22
+spi_tb.U0.dato_leido[15:0]
+@28
+spi_tb.U0.MOSI
+@200
+-TARGET 1
+@28
+[color] 3
+spi_tb.U1.SCK
+[color] 7
+spi_tb.U1.SS
+[color] 2
+spi_tb.U1.MISO
+spi_tb.U1.MOSI
+@24
+spi_tb.U1.cuenta_bits[4:0]
+@28
+[color] 3
+spi_tb.U1.estado[1:0]
+@22
+spi_tb.U1.dato_leido[15:0]
+spi_tb.U1.dato_enviado[15:0]
+@200
+-TARGET 2
+@28
+[color] 7
+spi_tb.U2.SS
+[color] 2
+spi_tb.U2.MISO
+spi_tb.U2.MOSI
+@24
+spi_tb.U2.cuenta_bits[4:0]
+@28
+[color] 3
+spi_tb.U2.estado[1:0]
+@22
+spi_tb.U2.dato_leido[15:0]
+spi_tb.U2.dato_enviado[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

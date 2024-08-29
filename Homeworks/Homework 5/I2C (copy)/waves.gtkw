@@ -1,0 +1,70 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Mon Jun 17 19:41:39 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework/Homework 5/I2C/I2C.vcd"
+[dumpfile_mtime] "Mon Jun 17 19:40:59 2024"
+[dumpfile_size] 11989
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework/Homework 5/I2C/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -27 -24
+*-10.000000 755 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] I2C_tb.
+[sst_width] 273
+[signals_width] 206
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@200
+-CPU
+@28
+I2C_tb.U0.RESET
+I2C_tb.U0.CLK
+I2C_tb.U0.START_STB
+[color] 4
+I2C_tb.U0.SDA_OE
+I2C_tb.U0.SDA_OUT
+I2C_tb.U0.SCL
+@24
+[color] 2
+I2C_tb.U0.cuenta_bits[4:0]
+@28
+I2C_tb.U0.posedge_SCL
+I2C_tb.U0.SDA_IN
+I2C_tb.U0.posedge_SCL
+[color] 3
+I2C_tb.U0.estado[2:0]
+@24
+I2C_tb.U0.I2C_ADDR[6:0]
+@22
+I2C_tb.U0.RD_DATA[15:0]
+@24
+I2C_tb.U0.WR_DATA[15:0]
+@200
+-TARGET
+@28
+I2C_tb.U1.CLK
+I2C_tb.U1.SDA_OE
+I2C_tb.U1.SCL
+I2C_tb.U1.posedge_SCL
+@24
+[color] 2
+I2C_tb.U1.cuenta_bits[4:0]
+@28
+I2C_tb.U1.SDA_OUT
+@24
+I2C_tb.U1.I2C_ADDR_RECIBIDO[6:0]
+@22
+I2C_tb.U1.RD_DATA[15:0]
+@28
+[color] 3
+I2C_tb.U1.estado[2:0]
+[color] 7
+I2C_tb.U1.SDA_IN
+@22
+I2C_tb.U1.RD_DATA[15:0]
+@24
+I2C_tb.U1.I2C_ADDR[6:0]
+I2C_tb.U1.WR_DATA[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

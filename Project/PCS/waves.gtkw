@@ -1,0 +1,71 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jul  7 01:19:09 2024
+[*]
+[dumpfile] "/home/daniiub47/1S2024_G2/PCS/PCS.vcd"
+[dumpfile_mtime] "Sun Jul  7 01:17:54 2024"
+[dumpfile_size] 423884
+[savefile] "/home/daniiub47/1S2024_G2/PCS/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -1 -1
+*-6.000000 25 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] PCS_tb.
+[treeopen] PCS_tb.P0.
+[treeopen] PCS_tb.P0.S0.
+[treeopen] PCS_tb.P0.T0.
+[sst_width] 273
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@200
+-PCS
+@28
+PCS_tb.P0.CLK
+[color] 7
+PCS_tb.P0.RESET
+@22
+[color] 2
+PCS_tb.P0.TXD_[7:0]
+@28
+PCS_tb.P0.TX_EN_
+@22
+[color] 3
+PCS_tb.P0.RXD[7:0]
+@200
+-TRANSMISOR
+@22
+[color] 2
+PCS_tb.P0.T0.TXD_[7:0]
+@28
+PCS_tb.P0.T0.TX_EN_
+@29
+[color] 4
+PCS_tb.P0.T0.CG.tx_code_group[9:0]
+@200
+-SINCRONIZADOR
+@28
+[color] 4
+PCS_tb.P0.S0.rx_cg[9:0]
+[color] 7
+PCS_tb.P0.S0.sync_status
+@24
+PCS_tb.P0.S0.cont_datos[2:0]
+@28
+[color] 5
+PCS_tb.P0.S0.SUDI[10:0]
+@200
+-RECEPTOR
+@28
+[color] 5
+PCS_tb.P0.R0.SUDI[10:0]
+[color] 7
+PCS_tb.P0.R0.SYNC_STATUS
+PCS_tb.P0.R0.receiving
+@22
+[color] 3
+PCS_tb.P0.R0.RXD[7:0]
+@28
+PCS_tb.P0.R0.RX_DV
+[pattern_trace] 1
+[pattern_trace] 0

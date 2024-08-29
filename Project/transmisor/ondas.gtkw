@@ -1,0 +1,42 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sun Jul  7 01:52:34 2024
+[*]
+[dumpfile] "/home/yo/proyectod2/transmisor/resultados.vcd"
+[dumpfile_mtime] "Sun Jul  7 01:51:41 2024"
+[dumpfile_size] 4487
+[savefile] "/home/yo/proyectod2/transmisor/ondas.gtkw"
+[timestart] 25
+[size] 1850 890
+[pos] -1 -1
+*-4.515849 106 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spi_tb.
+[treeopen] spi_tb.T1.
+[treeopen] spi_tb.T1.CG.
+[sst_width] 48
+[signals_width] 252
+[sst_expanded] 0
+[sst_vpaned_height] 246
+@23
+spi_tb.T1.TXD_[7:0]
+@28
+spi_tb.T1.TX_EN_
+spi_tb.T1.clk_
+spi_tb.T1.main_reset_
+spi_tb.T1.tx_code_group_[9:0]
+spi_tb.T1.CG.tx_disparity
+spi_tb.T1.CG.next_tx_disparity
+@24
+spi_tb.T1.tx_o_set[4:0]
+@28
+spi_tb.T1.CG.tx_even
+@200
+-TRANSMISOR_CG
+@28
+spi_tb.T1.CG.current_state_CG[2:0]
+@200
+-TRANSMISOR_OS
+@28
+spi_tb.T1.OS.current_state_OS[4:0]
+[pattern_trace] 1
+[pattern_trace] 0

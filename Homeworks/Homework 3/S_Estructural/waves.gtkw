@@ -1,0 +1,62 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Sun May 19 02:41:00 2024
+[*]
+[dumpfile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework 3 (copy)/resultados.vcd"
+[dumpfile_mtime] "Sun May 19 02:39:56 2024"
+[dumpfile_size] 6478
+[savefile] "/home/alonsojose/Documents/College/Digital-Circuits-II/Homework 3 (copy)/waves.gtkw"
+[timestart] 0
+[size] 1440 821
+[pos] -27 -24
+*-6.185585 12 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] controlador_tb.
+[sst_width] 297
+[signals_width] 203
+[sst_expanded] 1
+[sst_vpaned_height] 234
+@28
+controlador_tb.U0.CLK
+controlador_tb.U0.RESET
+controlador_tb.U0.TARJETA_RECIBIDA
+controlador_tb.U0.TIPO_TRANS
+@22
+controlador_tb.U0.DIGITO[3:0]
+@28
+controlador_tb.U0.DIGITO_STB
+@22
+controlador_tb.U0.DIGITO1[3:0]
+controlador_tb.U0.DIGITO2[3:0]
+controlador_tb.U0.DIGITO3[3:0]
+controlador_tb.U0.DIGITO4[3:0]
+controlador_tb.U0.ALL_DIGITOS[15:0]
+controlador_tb.U0.PIN[15:0]
+@24
+controlador_tb.U0.BALANCE[63:0]
+controlador_tb.U0.NXT_BALANCE[63:0]
+controlador_tb.U0.MONTO[31:0]
+@28
+controlador_tb.U0.BALANCE_ACTUALIZADO
+controlador_tb.U0.MONTO_STB
+@24
+[color] 3
+controlador_tb.U0.STATE[5:0]
+@25
+controlador_tb.U0.NXT_STATE[5:0]
+@24
+[color] 2
+controlador_tb.U0.INTENTOS[1:0]
+@28
+controlador_tb.U0.ENTREGAR_DINERO
+controlador_tb.U0.PIN_INCORRECTO
+controlador_tb.U0.ADVERTENCIA
+[color] 1
+controlador_tb.U0.BLOQUEO
+controlador_tb.U0.FONDOS_INSUFICIENTES
+@24
+controlador_tb.U0.i[4:0]
+controlador_tb.U0.NXT_i[4:0]
+@28
+controlador_tb.U0.FLAG
+[pattern_trace] 1
+[pattern_trace] 0
